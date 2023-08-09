@@ -1,0 +1,130 @@
+.p-btn {
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  align-items: center;
+  gap: 0.7rem;
+  border-radius: 0.5rem;
+  height: 3.875rem;
+  width: 13.938rem;
+  border: none;
+  font-size: 0.875rem;
+  letter-spacing: 0.193rem;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #D42828;
+}
+.p-btn:hover {
+  background-color: #bf0707;
+  cursor: pointer;
+}
+
+.s-btn {
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  align-items: center;
+  gap: 0.7rem;
+  border-radius: 0.5rem;
+  height: 3.875rem;
+  width: 13.938rem;
+  border: none;
+  font-size: 0.875rem;
+  letter-spacing: 0.193rem;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #4B4B4F;
+}
+.s-btn:hover {
+  background-color: #6f6f73;
+  cursor: pointer;
+}
+
+.search-btn {
+  display: flex;
+  align-items: center;
+  border-radius: 2.313rem;
+  letter-spacing: 0.193rem;
+  width: 11.896rem;
+  height: 3.375rem;
+  background-color: #D42828;
+  color: #FFFFFF;
+  justify-content: center;
+  border: none;
+  gap: 0.7rem;
+}
+.search-btn:hover {
+  background-color: #bf0707;
+  cursor: pointer;
+}
+
+.elipse {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 49px;
+  height: 48px;
+  background-color: #FF9900;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.slayer-btn {
+  display: flex;
+  align-items: center;
+  border-radius: 2.313rem;
+  letter-spacing: 0.193rem;
+  width: 11.896rem;
+  height: 3.375rem;
+  border: 4px solid #F90;
+}
+.slayer-btn:hover {
+  border: none;
+  background-color: #F90;
+  cursor: pointer;
+}
+
+.principal-title, .principal-title .variante {
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3rem;
+  font-style: normal;
+  width: 40rem;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.015rem;
+  text-transform: uppercase;
+}
+.principal-title .variante {
+  color: #F90;
+}
+
+.btn-go {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  border-radius: 50%;
+}
+.btn-go svg {
+  width: 44px;
+  height: 41px;
+}
+.btn-go path {
+  fill: #FF9900;
+}
+.btn-go:hover {
+  background-color: #965c04;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+/*# sourceMappingURL=index.css.map */

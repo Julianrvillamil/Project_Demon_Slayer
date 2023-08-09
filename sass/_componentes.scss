@@ -1,0 +1,162 @@
+
+// Definimos las variables de los colores que más vamos a utilizar 
+
+$p-color: #D42828;
+$s-color: #4B4B4F;
+$p-color-hover: #bf0707;
+
+// creamos unos mixin para reducir el codigo y reutilizarlo
+
+@mixin btn-class(){
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    align-items: center;
+    gap: 0.7rem;
+    border-radius: 0.5rem;
+    height: 3.875rem;
+    width: 13.938rem;
+    border: none;
+    font-size: 0.875rem;
+    letter-spacing: 0.193rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@mixin radius-btn(){
+    display: flex;
+    align-items: center;
+    border-radius: 2.313rem;
+    letter-spacing: 0.193rem;
+    width: 11.896rem;
+    height: 3.375rem;
+    
+}
+
+// go-back-btn
+
+@mixin go-back-btn(){
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+
+// p-btn es el boton principal
+
+.p-btn{
+    @include btn-class;
+    background-color: $p-color;
+
+    &:hover{
+        background-color: $p-color-hover;
+        cursor: pointer;
+    }
+}
+
+
+// s-btn es el botón secundario
+
+.s-btn{
+    @include btn-class;
+    background-color: $s-color;
+
+    &:hover{
+        background-color: #6f6f73;
+        cursor: pointer;
+    }
+}
+
+// search-btn boton de busqueda
+
+.search-btn{
+    @include radius-btn;
+    background-color: $p-color;
+    color: #FFFFFF;
+    justify-content: center;
+    border: none;
+    gap: 0.7rem;
+
+    &:hover{
+        background-color: $p-color-hover;
+        cursor: pointer;
+    }
+}
+
+
+// elipse (crea el circulo naraja que hat adentro del botón)
+
+.elipse{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 49px;
+    height: 48px;
+    background-color: #FF9900;
+    border-radius: 50%;
+    margin-right:1rem;
+}
+
+// slayer-btn boton (Lo voy a cambiar por un toggle)
+
+.slayer-btn{
+    @include radius-btn;
+    border: 4px solid #F90;
+
+    &:hover{
+        border: none;
+        background-color: #F90;
+        cursor: pointer;
+    }
+}
+
+// Esta es la plantilla que le da los estilos a el titulo
+
+.principal-title{
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    font-style: normal;
+    width: 40rem;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing:-0.015rem;
+    text-transform: uppercase;
+
+/*Este bloquesito de codigo le da el color naranja a la parte del titulo
+(la parte del titulo que se resalta va dentro de un <span> con la clase .variante)*/
+
+    .variante{
+        @extend .principal-title;
+        color: #F90;
+    }
+}
+
+// es el boton para pasar de pagina
+
+.btn-go{
+    @include go-back-btn;
+    border-radius: 50%;
+
+    svg{    
+        width: 44px;
+        height: 41px;
+    }
+
+    path{
+        fill: #FF9900;
+    }
+
+    &:hover{
+        background-color: #965c04;
+    }
+
+}
+
+
+
+
+
