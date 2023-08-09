@@ -11,7 +11,7 @@
   font-size: 0.875rem;
   letter-spacing: 0.193rem;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #D42828;
+  background-color: #d42828;
 }
 .p-btn:hover {
   background-color: #bf0707;
@@ -31,7 +31,7 @@
   font-size: 0.875rem;
   letter-spacing: 0.193rem;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #4B4B4F;
+  background-color: #4b4b4f;
 }
 .s-btn:hover {
   background-color: #6f6f73;
@@ -45,8 +45,8 @@
   letter-spacing: 0.193rem;
   width: 11.896rem;
   height: 3.375rem;
-  background-color: #D42828;
-  color: #FFFFFF;
+  background-color: #d42828;
+  color: #ffffff;
   justify-content: center;
   border: none;
   gap: 0.7rem;
@@ -62,7 +62,7 @@
   align-items: center;
   width: 49px;
   height: 48px;
-  background-color: #FF9900;
+  background-color: #ff9900;
   border-radius: 50%;
   margin-right: 1rem;
 }
@@ -74,15 +74,16 @@
   letter-spacing: 0.193rem;
   width: 11.896rem;
   height: 3.375rem;
-  border: 4px solid #F90;
+  border: 4px solid #f90;
 }
 .slayer-btn:hover {
   border: none;
-  background-color: #F90;
+  background-color: #f90;
   cursor: pointer;
 }
 
-.principal-title, .principal-title .variante {
+.principal-title,
+.principal-title .variante {
   color: #000;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 3rem;
@@ -94,7 +95,7 @@
   text-transform: uppercase;
 }
 .principal-title .variante {
-  color: #F90;
+  color: #f90;
 }
 
 .btn-go {
@@ -113,7 +114,7 @@
   height: 41px;
 }
 .btn-go path {
-  fill: #FF9900;
+  fill: #ff9900;
 }
 .btn-go:hover {
   background-color: #965c04;
@@ -125,6 +126,88 @@ body {
   justify-content: center;
   align-items: center;
   gap: 3rem;
+  font-family: "Inter", sans-serif;
+  background-image: url("../assets/img/fondo.png");
+  background-size: cover; /* Ajusta la imagen al tamaño de la ventana */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-attachment: fixed; /* Fija la imagen mientras se desplaza la página */
+}
+/*# sourceMappingURL=index.css.map */
+
+/* Resetear márgenes y rellenos por defecto */
+body,
+h1,
+h2,
+h3,
+ul,
+li {
+  margin: 0;
+  padding: 0;
 }
 
-/*# sourceMappingURL=index.css.map */
+/* Estilos para el encabezado (header) */
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 20px;
+}
+/* Estilos para el logo */
+.logo {
+  margin-left: 80px; /* Separación entre el logo y la barra de navegación */
+}
+
+/* Estilos para el logotipo */
+.logo img {
+  width: 80px; /* Tamaño del logotipo */
+  height: auto;
+}
+
+/* Estilos para la barra de navegación */
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; /* Distribuye los elementos a lo largo del ancho */
+  padding: 10px 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center; /* Centra los elementos horizontalmente */
+  align-items: center; /* Centra los elementos verticalmente */
+  text-align: center;
+}
+
+nav li {
+  margin-right: 20%; /* Espacio entre elementos de la lista */
+  display: inline-block;
+}
+
+nav a {
+  text-decoration: none;
+  color: white; /* Color del texto de los enlaces */
+  font-weight: bold;
+  transition: color 0.3s; /* Transición al pasar el mouse */
+}
+
+nav a:hover {
+  color: #ff9900; /* Color del texto al pasar el mouse */
+}
+
+.search-slayer-btns {
+  display: flex;
+  justify-content: space-between;
+}
+ul button {
+  margin: 3%;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px 20px;
+}
